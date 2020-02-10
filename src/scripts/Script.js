@@ -6,8 +6,6 @@ function loadData(){
   data = document.getElementById("data")
   data.value = "What we have to  do today: "
   data.appendChild(document.createTextNode(date))
-
-  console.log(date)
   
 }
 
@@ -86,22 +84,22 @@ function clean(){
 function addTask(){
   ol = document.getElementById("notCompletedTasks")
   
-  if(ol.children.length == 0){
-    div = document.getElementById("notCompleted")
-    div.setAttribute("class", "content")
-  }
-
   titleNode = document.getElementById("input_title_task")
   descriptionNode = document.getElementById("input_description_task")
   dateNode = document.getElementById("inputDate")
 
-  console.log(dateNode.value)
-
   if(titleNode.value != ""){
+
+    if(ol.children.length == 0){
+      div = document.getElementById("notCompleted")
+      div.setAttribute("class", "content")
+    }
+
     createTask(titleNode.value, descriptionNode.value, dateNode.value)
 
     titleNode.value = ""
     descriptionNode.value = ""
+    dateNode.value = ""
 
   }
 
