@@ -1,0 +1,12 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "To Do list with Electon",
+  "main": "App.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Vitor Reis",
+  "license": "ISC",
+  "dependencies": {}
+}

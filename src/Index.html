@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link href="./styles/Style.css" rel="stylesheet">
+    <link href="./styles/ItemNotCompleteStyle.css" rel="stylesheet">
+    <link href="./styles/ItemCompleteStyle.css" rel="stylesheet">
+    <script type="text/javascript" src="./scripts/Script.js"></script>
+  </head>
+
+  <body onload="loadData()">
+    <header>
+      <h2 id="data">What we have to  do today: </h2>
+      
+    </header>
+
+    
+    <div id="input_container">
+      <span style="padding: 10px; color: #979797;">New Task</span>
+      <div id="inputDiv">
+        <input class="input" type="text" id="input_title_task" style= "color: #d2d2d2" placeholder="Title"/>
+        <input class="input" type="text" id="input_description_task" style= "color: #d2d2d2" placeholder="Description"/>
+
+        <input class="input" type="date" id="inputDate" />
+      </div>
+      <div class="buttons">
+        <button type="button" class="button" id="btn_cancel" onclick="clean()">Clean</button>
+        <button  type="button" class="button" id="btn_add_task" onclick="addTask()">Add task</button>
+      </div>
+
+    </div>
+
+    <div id="container">
+      
+      <div class="micro_container">
+        <h3 style="margin: 10px;">Tasks</h3>
+        <div id="notCompleted">
+          <ol id="notCompletedTasks">
+          
+          </ol>
+        </div>
+
+      </div>
+      
+
+    <div class="micro_container">
+      <h3 style="margin:10px;">Done tasks</h3>
+      <div id="completed">
+        <ol id="doneTask">
+          
+        </ol>
+      </div>
+    </div>
+
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,12 @@
+
+.item_complete_container{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.item_complete_itern_div{
+  display: flex;
+  flex-direction: row;
+}
